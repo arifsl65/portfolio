@@ -1,0 +1,20 @@
+
+ 
+div {
+    align-items: end;
+    width: 100px;
+    height: 100px;
+    background: red;
+    position:relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    0% {top: 0px;}
+    10% {top: 10px;}
+    20% {top: 20px;}
+    30% {top: 30px;}
+    50% {top: 50px; background-color: black;width: 300px;}
+    75% {top: 75px;}
+    100% {top: 100px;}
+}

@@ -1,0 +1,14 @@
+div>p {
+    background-color: burlywood;
+}
+div + p {
+    background-color: blue;
+}
+
+code ~ p {
+    background-color:blueviolet;
+  }
+
+  div p {
+    background-color: yellow;
+  }

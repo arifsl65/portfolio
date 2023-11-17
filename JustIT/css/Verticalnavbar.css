@@ -1,0 +1,20 @@
+ul{
+color: aqua;
+font-style: italic;
+}
+
+li a
+{
+color: blue;
+}
+
+li a:hover{
+    color: burlywood;
+    background-color: #555;
+
+}
+
+li a:active{
+    color: greenyellow;
+    background-color: black;
+}

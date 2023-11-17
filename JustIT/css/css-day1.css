@@ -1,0 +1,330 @@
+/* Introduction to CSS*/
+
+/* CSS Comment */
+
+/* 
+font-family: 'Nunito', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Unbounded', cursive;
+*/
+
+/*
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/*Inline, Internal and External CSS*/
+
+/*  Inline = In HTML document using "style" e.g. style="color:blue; font-family:Arial;"
+
+    Internal = CSS written inside a HTML within the coding environment you are using, 
+    like this document we are using
+
+    External = CSS inherited/sourced from external sources. 
+    This could include imported font styles or icons
+    Example sites: 
+    Google Fonts (https://fonts.google.com/) and 
+    Font Awesome (https://fontawesome.com/) */
+
+/* font-family: 'Bangers', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Sans SC', sans-serif; */
+
+p {
+   font-family: 'Montserrat', cursive;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+
+
+/*Using Chrome Developer Tools*/
+/* Task - 1) open a browser, go to a webpage of your choice
+          2) anywhere on the page right click a menu should appear
+          3) At the bottom of the menu click on inspect, to right side of the screen a new panel will appear
+          4) Investigate the setup and how it works */
+
+.classOne{
+    color:#f4a;
+}
+
+.classTwo{
+    color:rgb(130, 255, 68);
+}
+
+/* Specificity - 
+1) #id, .class, element 
+ID = one element // green
+Class = all element with that class name // blue
+element = all elements targeted e.g. p = all paragraghs // red
+
+<div id="about" class="content container shadow">
+
+
+#about{
+    background-color:blue;
+}
+
+.shadow {
+    background-color:black;
+}
+
+.container {
+    background-color:green;
+}
+
+div{
+    background-color:red;
+}
+
+
+
+
+
+2) parent (div), children (p font different), img, img, button) 
+
+
+element or class(.) or id (#) {
+    ruleset for CSS -
+    What: Change;
+    What: Change;
+    What: Change;
+    What: Change;
+}
+
+font-family: 'Assistant', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+h2 {
+    color:rgb(250, 84, 58);
+    background-color: cadetblue;
+}
+
+div {
+    font-weight:700;
+    color:cornflowerblue;
+    font-size:18px; 
+}
+
+#title { /* an id start with a # then the name of the id*/
+ font-size: 16px;
+}
+
+.heading { /* a class starts with a . then the name of the class*/
+    font-size: medium;
+}
+
+p {
+/*Fonts in CSS*/
+    /* font-family:Arial, Helvetica, sans-serif;*/
+
+
+/*Colors in CSS*/
+    color: rgba(209, 44, 99, 0.9); /* hex number numbers range: 0-9, letters range: a-f */
+    /* 3 ways to get a color, preset names in css, rgb value, hex number start with a # */
+
+    font-size: 14px;
+    margin: 1px 5px 3px 50px; /* Top Right Bottom Left (TReBLe) */
+}
+
+#x {
+    color:forestgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Selectors in CSS*/
+/*  These are the HTML elements we want to target to style, they can be placed in 5 catergories:
+
+    Simple selectors (select elements based on name, id, class)
+    uses the element name (e.g. p or div), and id given to an element (in CSS the symbol for an id = "#"),
+    or a class name (e.g. "shadow", the symbol for class = "." */
+    
+    body {
+        background-color: rgb(242, 255, 213);
+        font-family: 'Fredoka', sans-serif;
+    }
+
+    #main {  /* let's say this is instructions for a parent div */
+        color:rgb(100, 15, 15);
+        font-size: large;
+    }
+
+    .content { /* let's say this is instructions for a child item */
+        color: rgb(241, 241, 255);
+        background-color:rgb(0, 0, 88);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+/*  Combinator selectors (select elements based on a specific relationship between them)
+
+        descendant selector (space) ELEMENT ELEMENT e.g div p{}
+
+        child selector (>) ELEMENT > ELEMENT{} e.g div>p{} p child of a div  
+
+        adjacent sibling selector (+) next to the target ELEMENT + ELEMENT{}
+
+        general sibling selector (~) anything on the sibling ELEMENT ~ ELEMENT{}
+
+        /* sibling = same level in the code
+
+    Q.) What is the below CSS telling you will happen? */
+
+        div>p{ /*Any paragraph that is a desendant of a div will apply*/
+            font-weight: 200;
+            color:rgb(22, 80, 227);
+        }
+
+        div h2~p{
+            background-color:#f89808;
+        }
+
+         input {
+            color: chartreuse;
+        }
+
+                                        /* "#" = ID, "." = CLASS */
+/*Task - Write CSS where the decendants of div with the class "container" are red, 
+font is arial, small and bold */
+
+.container p{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+div .container{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+/* Pseudo-class selectors (select elements based on a certain state)
+        Style an element when a users mouse hovers over it
+        Style visited and unvisited links differently
+        Style an element when it gets focus
+
+
+    Q.) Can you figure out what is happening? */
+
+        .btn, 
+        button {
+            background-color:red;
+            color:pink; 
+        }
+
+        .btn:hover,
+        input:hover, 
+        button:hover {
+            background-color:pink;
+            color:red;
+        }
+
+        a:link {
+            color:rgb(139, 175, 223);
+        }
+
+        a:visited {
+            color:rgb(4, 44, 98);
+        }
+
+
+
+/*  Pseudo-elements selectors (select and style a part of an element)
+        Style the first letter, or line, of an element
+        Insert content before, or after, the content of an element
+
+
+    Q) What do think the CSS below is doing? */
+
+        div.content::before {
+            color: rgb(240, 145, 20);
+            font-weight:bolder;
+        }
+
+
+        article::after {
+            content: "OMG LOOK AT THIS ...";
+        }
+
+/*applies to all div elements with content class first letter only */
+
+/*   Attribute selectors (select elements based on an attribute or attribute value
+        The [attribute] selector is used to select elements with a specified attribute */
+
+        a[target="_blank"] {
+        background-color: green;
+        }
+
+        label[for="first"]{
+            color:#f4a;
+            background-color: lightpink;
+        }
+        
+
+  /* Above we are targetting the "target" attribute of <a> (anchor) element that have the value of "_blank"*/
+
+
+  img {
+      width: 150px;
+      height:75px;
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+
+  h1 {
+      display: inline;
+      text-align: center;
+      margin-left: 10%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:rgb(0, 0, 88);
+      font-weight: 800;
+  }
+
+  form {
+      margin-top: 10px;
+      margin-left: 40%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #consoles {
+
+    color:blue;
+  }

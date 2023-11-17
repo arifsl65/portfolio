@@ -1,0 +1,25 @@
+a:hover{
+    color:yellowgreen;
+    font-size: smaller;
+    background-color: beige;
+
+}
+
+a:visited
+{
+    color: blue;
+
+}
+a:hover{
+    color: blanchedalmond;
+}
+
+a:active{
+    color: red;
+}
+
+.highlighted {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,41 @@
+body{
+    background-color: aquamarine;
+}
+
+@media screen and (min-width:400px ) {
+body {
+background-color:white;    
+}
+
+}
+
+@media screen and (min-width: 800px) {
+    body {
+      background-color:red;
+    }
+  }
+
+
+  div>p:nth-child(2n-1) {
+    color: blue;
+  }
+  #jack:nth-child(2){
+    color: blueviolet;
+  }
+
+  #example1 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+  }
+#example2 {
+  border: 1px solid;
+  padding: 15px;
+  box-shadow: 5px 10px red;
+
+}
+
+ #text1{
+  font-size:x-large;
+  text-shadow: 2px 2px purple;
+}

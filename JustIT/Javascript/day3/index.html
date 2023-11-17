@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header, main, footer {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+
+        header {
+            background-color: #f2f2f2;
+        }
+
+        main {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            border: 2px solid #333;
+        }
+
+        .relative {
+            background-color: #e74c3c;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Header - Position: Relative</h1>
+    </header>
+
+    <main>
+        <div class="box relative">Relative</div>
+    </main>
+
+    <footer>
+        <p>Footer - Position: Static</p>
+    </footer>
+
+</body>
+
+</html>
