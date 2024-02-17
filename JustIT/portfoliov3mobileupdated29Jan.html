@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arif Chowdhury - Full Stack Web Developer and Data Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #15616d;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: black;
+            font-family: 'Nunito', sans-serif;
+            padding: 20px;
+        }
+
+        header, nav, section, footer {
+            padding: 1em;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        header {
+            background-color: #15616d;
+            text-align: center;
+            padding-left: 20px;
+            color: whitesmoke;
+            font-weight:bolder;
+
+        }
+
+        nav {
+            background-color: #15616d;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 0 1em;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        section {
+            background-color: blanchedalmond;
+            border: 1px solid red
+            border-radius: 8px;
+            margin: 1em;
+        }
+
+        .project-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-card {
+            width: 300px;
+            border: 1px solid red;
+            border-radius: 8px;
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 1em;
+        }
+
+        .profile-card {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            padding: 1em;
+            text-align: center;
+            background-color: #15616d;
+            border: 1px solid red;
+            border-radius: 8px;
+        }
+
+        p {
+            margin: 10px 0;
+            text-align: justify;
+            hyphens:none;
+            margin-bottom: 1em;
+            line-height: 1.5;
+            padding:2px;
+            
+        }
+
+        .profile-card img {
+            max-width: 50%;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+
+        #skills-print-button {
+            background-color: #15616d;
+            color: blanchedalmond;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5em;
+        }
+
+        footer {
+            background-color: #15616d;
+            text-align: left;
+            border: 1px solid red;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .project-card {
+                width: 100%;
+            }
+
+            .profile-card {
+                width: 50%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .project-card a.learn-more-button {
+            display: inline-block;
+            background-color: #15616d;
+            color: blanchedalmond;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .project-card a.learn-more-button:hover {
+            background-color: #0056b3;
+        }
+
+        .contactContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contactText{
+            width: 70%;
+            text-align: left;
+            padding-left: 10px;
+         }
+
+         .contactImage{
+            width:30%;
+         }
+         .contactImage img{
+            width:100%;
+            height:auto;
+         }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills-text {
+        width: 70%;
+        text-align: center;
+        padding-left: 20px;
+        }
+
+        .skills-image {
+            width: 30%;
+        }
+
+        .skills-image img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolioContainer {
+         display: flex;
+        justify-content: space-between;
+        }
+
+        .portfolioText {
+            width: 70%;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .portfolioImage {
+            width: 30%; /* Adjust the width as needed */
+            align-items:center ;
+        }
+
+        .portfolioImage img {
+            width: 100%; 
+            max-height: 200px;
+            height: auto; /* Maintain the aspect ratio */
+            margin: 0 auto;
+        }
+
+        
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <img src="profilePic.jpeg" alt="Your Profile Picture">
+    </div>
+
+    <header>
+        <h1>Arif Chowdhury</h1>
+        <h1>Full Stack Web Developer and Data Analyst </h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://drive.google.com/file/d/1AJGzVscYGsYWV7qeCkBzuOeGlNtucqQN/view?usp=sharing" target="_blank">CV</a>
+    </nav>
+
+    <section id="home">
+        <div class="portfolioContainer">
+            <div class="portfolioText">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Feel free to explore and learn more about my skills and projects.</p>
+            </div>
+            <div class="portfolioImage">
+                <img src="portfolio.svg" alt="Your Image Alt Text">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate and dedicated individual with a strong foundation in Data Science and a growing expertise in Software Development. I successfully completed Data Science Level 4 at Northumbria University, where I honed my skills in Python and delved into developing a mini-project focused on stock trading. This project aimed to identify trending industries using mathematical formulas, showcasing my analytical and problem-solving capabilities.
+
+            Building on my data science background, I am currently enrolled in a Software Development bootcamp, where I am expanding my knowledge in both frontend and backend development. I have applied my acquired skills to develop a comprehensive US stock market research web app. Leveraging Python, JavaScript, HTML, CSS, and SQL, I have enjoyed the process of integrating this diverse technology stack.
+
+            As I actively seek opportunities as a junior developer, my goal is to further enhance my hands-on experience, explore cloud technology, and progress towards a role in DevOps and data analysis. I am enthusiastic about contributing to innovative projects and embracing new challenges in the dynamic world of technology.
+
+            I invite you to explore my portfolio, where you can witness the projects that reflect my journey and skills in the realms of Data Science and Software Development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-text">
+                <p>Programming Language: Python, C++, Pascal</p>
+                <p>Web Technology: HTML5, CSS3, JavaScript</p>
+                <p>Database: SQL, Firebase, MongoDB</p>
+                <p>Core Programming Languages: JavaScript, Python</p>
+                <p>Raspberry Pi Hardware Integration with Python</p>
+                <p>Harvard University EdX Online Course. Data Analysis Basic: Language R. Year: 2021</p>
+                <p>IBM Certified. Analyzing Data with Python. Year: 2021</p>
+                <p>W3Schools Certified in JavaScript, HTML5, CSS, SQL, Python</p>
+                <p>Microsoft Certified. Azure Data Fundamentals. Year: 2022</p>
+                <p>Microsoft Certified. Azure AI Fundamental. Year: 2022</p>
+            </div>
+            <div class="skills-image">
+                <img src="skills.svg" alt="Your Image Alt Text">
+            </div>
+        </div>
+        
+        <button id="skills-print-button" onclick="printSkills()">Print CV</button>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="project1.svg" alt="Project 1 Image" loading="lazy">
+                <h3>Single Stock research</h3>
+                <p>Conducted thorough research on the US stock market, utilizing Python (Flask) for efficient 
+                    backend data processing and employing CSS, HTML5, and JavaScript for dynamic web development features. Optimized performance by eliminating
+                     latency, and migrated the database to Google Sheets for public access. The platform facilitates comprehensive 
+                    fundamental equity analysis by consolidating public data onto a single page and providing visualizations of historical financial data.
+                </p>
+                <a href="https://github.com/arifsl65/stock4" class="learn-more-button" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="project2.svg" alt="Project 2 Image" loading="lazy">
+                <h3>UK Postcode </h3>
+                <p>An innovative addition to the web app, allowing users to discover the geographic coordinates (latitude and
+                    longitude) for locations in the United Kingdom based on their postal codes. This feature enhances the app's utility for users interested in both geographic data, offering a
+                    unique combination of functionalities.
+                </p>
+                <a href="https://github.com/arifsl65/RandomDataAnalysis/blob/main/UKpostcode.ipynb" class="learn-more-button" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="project3.svg" alt="Project 3 Image" loading="lazy">
+                <h3>Dhaka Real Estate </h3>
+                <p>I am excited to showcase the 'Dhaka Apartment Analyzer,' a Python project designed to collect and analyze real estate mass verified data sourced 
+                    from https://www.bproperty.com/. This initiative offers in-depth insights into apartment locations, demand patterns, and rental prices in Bangladesh, 
+                    serving as a valuable resource for local tech residents in making informed decisions within the dynamic real estate market
+                </p>
+                <a href="https://github.com/arifsl65/RandomDataAnalysis/blob/main/DhakaAprtmnt.ipynb" class="learn-more-button" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <div class="contactContainer">
+                <div class="contactText">
+                    <h2>Contact Me</h2>
+                    <ul>
+                        <li>Email: <a href="mailto:arifsl65@gmail.com">arifsl65@gmail.com</a></li>
+                        <li>Mobile: +44 7814 703852</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/arif-chowdhury-b48208226/">https://www.linkedin.com/in/arif-chowdhury-b48208226/</a>
+                        </li>
+                        <li>GitHub: <a href="https://github.com/arifsl65">https://github.com/arifsl65</a></li>
+                    </ul>
+                </div>
+            
+                <div class="contactImage">
+                    <img src="contact.svg" alt="Your Image Alt Text">
+                </div>
+            </div>
+
+
+        </section>
+    </footer>
+
+    <script>
+        function printSkills() {
+            window.open("https://drive.google.com/file/d/1AJGzVscYGsYWV7qeCkBzuOeGlNtucqQN/view", "_blank");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+ background-image: url('/Html/JustIT/portfolio/background.jpg');
+ https://drive.google.com/file/d/1AJGzVscYGsYWV7qeCkBzuOeGlNtucqQN/view?usp=sharing
+
+ https://stock4-2.onrender.com
+
+ https://github.com/arifsl65/RandomDataAnalysis/blob/main/UKpostcode.ipynb
+
+
+ https://github.com/arifsl65/RandomDataAnalysis/blob/main/DhakaAprtmnt.ipynb
+
+ https://github.com/arifsl65/databaseSQL/tree/main/sql_project 
